@@ -23,7 +23,7 @@ public class Principal {
 			calculo.setB(n2);
 
 			System.out.println(
-					"¿Qué operación deseas realizar? + para sumar, - para restar, x para multiplicar, / para dividir, p para potencia");
+					"¿Qué operación deseas realizar? + para sumar, - para restar, x para multiplicar, / para dividir, p para potencia, r para raíz");
 			operac = sc.next().charAt(0);
 
 			switch (operac) {
@@ -41,6 +41,9 @@ public class Principal {
 				break;
 			case 'p':
 				System.out.println(n1 + " elevado a " + n2 + " = " + calculo.potencia());
+				break;
+			case 'r':
+				System.out.println( "Raíz" + n1  + " de "+ n2 + " = " + calculo.raiz());
 				break;
 			default:
 				System.out.println("Error: caracter no válido");
