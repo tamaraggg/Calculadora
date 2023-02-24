@@ -50,4 +50,8 @@ public class Operacion {
 	public double potencia() {
 		return Math.pow(this.a, this.b);
 	}
+	
+	public double raiz() {
+		return Math.pow(this.a, (double)(1/this.b));
+	}
 }
