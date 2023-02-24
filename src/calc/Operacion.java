@@ -46,4 +46,8 @@ public class Operacion {
 	public int divison() {
 		return this.a / this.b;
 	}
+	
+	public double potencia() {
+		return Math.pow(this.a, this.b);
+	}
 }
